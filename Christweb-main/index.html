@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Wear</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function onSubmit() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            alert("Dear "+name+" Your Form is Submitted!!")
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#mens">Men's</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <div class="home">
+            <div class="carousel">
+                <div class="images">
+                    <img src="assets/Home_Page_1.webp" alt="">
+                    <img src="assets/Home_page_ldtZzgv.webp" alt="">
+                    <img src="assets/PPG_SHOES_MEMBERS_HOMEPAGE.webp" alt="">
+                    <img src="assets/W_JOGGERS_HOMEPAGE.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="featured">
+        <h1>Featured</h1>
+        <div class="latest">
+            <div class="row1">
+                <img src="assets/Cat_BIG_TILE_Women_BACKPACK_ln3ZbMm.webp" alt="">
+                <img src="assets/Cat_BIG_TILE_Women_CO-ORD_SETS_pOSuA9R.webp" alt="">
+                <img src="assets/Cat_BIG_TILE_Women_DRESSES_qrNDkmz.webp" alt="">
+                <img src="assets/Cat_BIG_TILE_Women_JEANS_ZfkYz4r.webp" alt="">
+            </div>
+            <div class="row2">
+                <img src="assets/Cat_BIG_TILE_Women_LIGHT_LAYERING__QZLwBbu.webp" alt="">
+                <img src="assets/Cat_BIG_TILE_Women_OVERSIZED_T-SHIRTS_6DMThKF.webp" alt="">
+                <img src="assets/Cat_BIG_TILE_Women_SHIRTS_AJH6UJ5.webp" alt="">
+                <img src="assets/Cat_BIG_TILE_Women_SNEAKERS_O7KW5q1.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="mens">
+        <h1>Men's Collection</h1>
+        <div class="latest">
+            <div class="mrow1">
+                <img src="assets/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg" alt="">
+                <img src="assets/3c2aa0bc-718a-4350-a269-c0cd734e182f1714465776913-HERENOW-Men-Tshirts-7611714465776507-1.jpg" alt="">
+                <img src="assets/7c3c7097-f05a-4fa4-a1fb-655a0d252b691723609081476-Lux-Cozi-Polo-Collar-Lounge-Tshirts-8561723609080865-2.jpg" alt="">
+                <img src="assets/49e2eae0-3969-419a-8625-72f0fbaf64db1592406267216-Urbano-Fashion-Men-Navy-Blue-Solid-Mandarin-Collar-T-shirt-9-1.jpg" alt="">
+            </div>
+            <div class="mrow2">
+                <img src="assets/92a622f5-b176-4f88-9047-d4aa102be73c1708496317607-The-Roadster-Life-Co-Printed-Drop-Shoulder-Sleeves-Pure-Cott-1.jpg" alt="">
+                <img src="assets/611250df-055a-48bf-8700-4ff5dfdc3b3d1711512160515PepeJeansMensAthleisuresolidcottonSleevelessMuscleT-shirt1.jpg" alt="">
+                <img src="assets/663d4927-fea5-4d7a-95c3-11ce150b48781726939422451-Urbano-Fashion-Men-Green-Mandarin-Collar-Cotton-Pure-Cotton--1.jpg" alt="">
+                <img src="assets/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <div id="cont">
+            <h1>Contact Us</h1>
+            <form id="contform">
+                <input type="text" id="name" placeholder="Enter Your Name">
+                <input type="text" id="email" placeholder="Enter Your E-Mail">
+                <input type="text" id="message" placeholder="Enter Your Message">
+                <button onclick="javascript:onSubmit()" type="submit">Submit</button>
+            </form>
+            <script>
+                function onSubmit() {
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var message = document.getElementById('message').value;
+                    alert("Dear "+name+" Your Form is Submitted!!")
+                }
+            </script>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Unbounded';
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    background-image: url(assets/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+}
+nav a{
+    text-decoration: none;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav a:hover{
+    scale: 1.2;
+    color: aquamarine;
+    text-shadow: 0 0 3vh aqua;
+}
+
+#home, #contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#featured, #mens{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.images{
+    display: flex;
+    height: 60vh;
+    width: 80%;
+    overlay: hidden;
+    gap: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.images img{
+    width: 70%;
+    height: auto;
+    gap: 10%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: slide 10s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 20 ;
+}
+.images img:hover{
+    scale: 1.05;
+    box-shadow: 0 0 3vh aqua;
+}
+h1 {
+    font-size: 8vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+h1:hover {
+    text-shadow: 0 0 2vh aqua;
+    scale: 1.02;
+}
+hr {
+    background-color: rgba(240, 248, 255, 0.342);
+    border-radius: 3vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 3vh aqua;
+}
+@font-face {
+    font-family: 'Unbounded';
+    src: url(/assets/Unbounded-VariableFont_wght.ttf);
+}
+.latest{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.row1{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.row1 img{
+    width: 16%;
+    border-radius: 2vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.row1 img:hover{
+    scale: 1.05;
+    box-shadow: 0 0 3vh aqua;
+}
+.row2{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.row2 img{
+    width: 16%;
+    border-radius: 2vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.row2 img:hover{
+    scale: 1.05;
+    box-shadow: 0 0 3vh aqua;
+}
+.mrow1{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.mrow1 img{
+    width: 15%;
+    border-radius: 2vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.mrow1 img:hover{
+    scale: 1.05;
+    box-shadow: 0 0 3vh aqua;
+}
+.mrow2{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.mrow2 img{
+    width: 15%;
+    border-radius: 2vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.mrow2 img:hover{
+    scale: 1.05;
+    box-shadow: 0 0 3vh aqua;
+}
+input{
+    display: block;
+    margin: 2%;
+    background-color: rgba(240, 248, 255, 0.24);
+    border: 0.2vh solid aliceblue;
+    width: 60vh;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+input:hover{
+    background-color: rgba(240, 248, 255, 0.384);
+}
+#cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: rgba(0, 255, 255, 0.274);
+    border-radius: 2vh;
+    border: none;
+    width: 20vh;
+    padding: 3vh;
+    margin-top: 4%;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+button:hover{
+    box-shadow: 0 0 3vh aqua;
+    border: 0.2vh solid aqua
+}
+@keyframes slide {
+    0% { transform: translateX(0%);}
+    25% { transform: translateX(-100%);}
+    50% { transform: translateX(-200%);}
+    75% { transform: translateX(-300%);}
+}
